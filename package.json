@@ -1,0 +1,56 @@
+{
+  "name": "weather-by-zip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon index.js",
+    "start:debug": "DEBUG=http* nodemon index.js",
+    "start:debug-win": "set DEBUG=serve* & nodemon index.js",
+    "test": "jest -i",
+    "test:watch": "jest -i --watchAll",
+    "test:debug": "DEBUG=http* jest -i",
+    "test:debug-win": "set DEBUG=serve* & jest -i",
+    "lint": "eslint .",
+    "lint:test": "npm run lint && npm test"
+  },
+  "jest": {
+    "setupFiles": [
+      "./__test__/lib/jest-setup.js"
+    ],
+    "verbose": true,
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "./node_modules/coverage",
+    "coveragePathIgnorePatterns": [
+      "/__test__/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamheathsmith/weather-by-zip.git"
+  },
+  "author": "Heath Smith",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "debug": "^3.1.0",
+    "del": "^3.0.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^4.17.0",
+    "express": "^4.16.2",
+    "jest": "^22.1.4",
+    "mongoose": "^5.0.3",
+    "multer": "^1.3.0",
+    "superagent": "^3.8.2"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "express-request-mock": "^2.0.0"
+  }
+}
