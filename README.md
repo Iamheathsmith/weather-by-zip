@@ -10,6 +10,7 @@
   <a href="#creators">Creators</a>
 </p>
 
+[![Build Status](https://travis-ci.org/Iamheathsmith/weather-by-zip.svg?branch=master)](https://travis-ci.org/Iamheathsmith/weather-by-zip)
 
 <br>
 
