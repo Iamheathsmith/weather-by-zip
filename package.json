@@ -21,7 +21,7 @@
   },
   "jest": {
     "setupFiles": [
-      "./__test__/lib/jest-setup.js"
+      "./__test__/jest-setup.js"
     ],
     "verbose": true,
     "testEnvironment": "node",
@@ -29,7 +29,15 @@
     "coverageDirectory": "./node_modules/coverage",
     "coveragePathIgnorePatterns": [
       "/__test__/"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   },
   "repository": {
     "type": "git",
