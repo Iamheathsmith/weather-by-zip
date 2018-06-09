@@ -14,7 +14,7 @@
 
 <br>
 
-### [Link to live site hosted on Heroku](https://gtfo-frontend.herokuapp.com/)
+### [Link to live site hosted on Heroku](https://zip-weather-frontend.herokuapp.com/)
 
 ## Overview
 ZipCode is an Mobile First design application designed to aid users to find the Weather at locations based on Zip Codes. Just simple place your zip code in to the input fields with a optional country code (Example like US for United states) and we will get the weather for you at that location right now along with some other helpful items such as Elevation, Time Zone and a few other bits.  We want the user to see a familiar looking layout to what we all see in weather apps. A quick view with the basic items such as current temperatures along with a High and Low temperature with other items like a description of the weather.

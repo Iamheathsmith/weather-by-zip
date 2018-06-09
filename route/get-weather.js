@@ -27,9 +27,6 @@ module.exports = function(router) {
           .query(time)
           .then(timeRes => {
             returnObj.time = timeRes.body;
-          })
-          .catch(err => {
-            errorHandler(err, response);
           });
       })
       .then(() => {
@@ -41,9 +38,6 @@ module.exports = function(router) {
           .query(elevation)
           .then(elevationRes => {
             returnObj.elevation = elevationRes.body;
-          })
-          .catch(err => {
-            errorHandler(err, response);
           });
       })
       .then(()=> response.status(200).send(returnObj))
